@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第 6 章 肯定语 - 没有改善不了的视力</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="cover.html">封面</a></li><li class="chapter-item expanded affix "><a href="prefix_1.html">自序</a></li><li class="chapter-item expanded affix "><a href="prefix_2.html">引言</a></li><li class="chapter-item expanded affix "><a href="prefix_3.html">如何使用本书</a></li><li class="chapter-item expanded affix "><a href="part_1.html">第一部 存在与观看</a></li><li class="chapter-item expanded affix "><a href="chapter_01.html">第 1 章 视觉之喻</a></li><li class="chapter-item expanded affix "><a href="chapter_02.html">第 2 章 回归清晰</a></li><li class="chapter-item expanded affix "><a href="chapter_03.html">第 3 章 改变的过程</a></li><li class="chapter-item expanded affix "><a href="part_2.html">第二部 用你的心当作工具</a></li><li class="chapter-item expanded affix "><a href="chapter_04.html">第 4 章 创造新的实相</a></li><li class="chapter-item expanded affix "><a href="chapter_05.html">第 5 章 正向思考</a></li><li class="chapter-item expanded affix "><a href="chapter_06.html" class="active">第 6 章 肯定语</a></li><li class="chapter-item expanded affix "><a href="chapter_07.html">第 7 章 观想</a></li><li class="chapter-item expanded affix "><a href="chapter_08.html">第 8 章 心智程式编写</a></li><li class="chapter-item expanded affix "><a href="chapter_09.html">第 9 章 对自己说话</a></li><li class="chapter-item expanded affix "><a href="part_3.html">第三部 另一种观看方式</a></li><li class="chapter-item expanded affix "><a href="chapter_10.html">第 10 章 拥抱自己的力量</a></li><li class="chapter-item expanded affix "><a href="chapter_11.html">第 11 章 你和你自己的关系</a></li><li class="chapter-item expanded affix "><a href="chapter_12.html">第 12 章 活在当下</a></li><li class="chapter-item expanded affix "><a href="chapter_13.html">第 13 章 泡泡实相</a></li><li class="chapter-item expanded affix "><a href="chapter_14.html">第 14 章 人类导航系统</a></li><li class="chapter-item expanded affix "><a href="chapter_15.html">第 15 章 问与答</a></li><li class="chapter-item expanded affix "><a href="chapter_16.html">第 16 章 结语</a></li><li class="chapter-item expanded affix "><a href="part_4.html">第四部 练习</a></li><li class="chapter-item expanded affix "><a href="practice_1.html">练习 1 爱你的眼睛</a></li><li class="chapter-item expanded affix "><a href="practice_2.html">练习 2 无为</a></li><li class="chapter-item expanded affix "><a href="practice_3.html">练习 3 逐步放松</a></li><li class="chapter-item expanded affix "><a href="practice_4.html">练习 4 哈达瑜伽眼部锻炼</a></li><li class="chapter-item expanded affix "><a href="practice_5.html">练习 5 视力平衡</a></li><li class="chapter-item expanded affix "><a href="practice_6.html">改善视力肯定语</a></li><li class="chapter-item expanded affix "><a href="practice_7.html">推荐两个月计划</a></li><li class="chapter-item expanded affix "><a href="practice_8.html">如何使用视力检查表</a></li><li class="chapter-item expanded affix "><a href="part_5.html">第五部 成功案例分享</a></li><li class="chapter-item expanded affix "><a href="postfix_1.html">随书附赠：改善视力的放松冥想 MP3</a></li><li class="chapter-item expanded affix "><a href="postfix_2.html">书籍信息</a></li><li class="chapter-item expanded affix "><a href="postfix_3.html">封底</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">没有改善不了的视力</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="第-6-章-肯定语"><a class="header" href="#第-6-章-肯定语">第 6 章 肯定语</a></h1>
+<p>什么是肯定语？</p>
+<p>肯定语是正向的陈述，能支持改变或描述新的实相。你可以被动地使用肯定语，例如经常倾听、反复阅读、或者三不五时思索这些肯定语。如果你这么使用肯定语，它们会产生细微但确实的影响。经过一段时间，你的意识会逐渐习惯于这些话语的意义。最终，你将会看到这些话语化为真实，这些陈述——肯定语——也将成为你新的意识中的基本信念。</p>
+<p>如果要加速这个过程，你也可以采取更加主动的方式来使用这些肯定语，在心中认同它们，寻找证据证明它们的真实。</p>
+<p>例如，有个肯定语是「我愈来愈容易看得清楚」。如何主动使用呢？当你听到或读到这句话，或者当你对自己说这句话，请将注意力集中在你的视野范围，以正向的期待感注意自己的视力状态。注意到你「确实」感觉容易多了。提醒自己，即使看清楚仍有点困难，但是等你重复这句肯定语一段时间，你就不会觉得那么困难，也会期待下一次的经验，因为将会轻松许多。很快，你就会发现确实愈来愈容易看得清楚。</p>
+<p>用肯定语来取代任何无建设性的想法。每次你胡思乱想，要提醒自己用肯定语，寻找能支持它的证据。如果你陷入批判性想法并且感到不舒服，请赶快转换频道，想个肯定语来提醒自己整个改善程序，这会让你觉得好很多。</p>
+<p>如果视力改善是发生在你身上最重要的事，那么你的想法会经常萦绕在这个程序上。</p>
+<p>描述新实相的肯定语，如果主动使用并且全心认同，那么它会让你立刻跳到新的实相。从那刻起，那就是事实。接着，你便可将新的实相当成你全新的、常态性的存在状态，并且去发现这个新的存在状态有哪些其他层面同时改善了。</p>
+<p>以下列出肯定语及其深度解释。每天挑选一则肯定语，当天经常使用。你将会看到效果。第二天选用另一则。持续这么做，直到你能清楚看见，不再需要肯定进展过程。你将不仅知道自己能看得清楚，你会确实看得清楚。</p>
+<h3 id="促进改变程序的肯定语"><a class="header" href="#促进改变程序的肯定语">促进改变程序的肯定语</a></h3>
+<p><strong>一、现在我的视力正在改善。</strong></p>
+<p>这代表你视力的改善不是什么你认为会在未来发生的事，而是「此刻」正在你意识内发生的事——这点和改善程序有关。你或许有注意到，或许没有，但是改善此刻正在发生。如果你还没注意到，这只是时间问题，改善一定会跨过可观察的门槛，并且让你发现。</p>
+<p><strong>二、我选择清晰。</strong></p>
+<p>视力不清晰反映着其他层面的不清晰。你体认这一点，肯定自己决心要在所有层面以清晰取代不清晰。你愿意在各种情况中有意识地选择清晰。无论任何状况，如果你需要在清晰与不清晰之间作个选择，你会选择清晰以及对你为真的一切。你选择正视自己过去不愿看见事物。在选择的那一刻——亦即真实的那一刻——你选择清晰以及真实的一切。</p>
+<p><strong>三、我知道什么是清晰，我也每天看得愈来愈清晰。</strong></p>
+<p>能够认出不清晰代表你对清晰有所了解。如果你不知道清晰是什么，又怎么能认出什么东西不清楚呢？你肯定这个知识与对清晰的体认逐渐在你意识中浮现，同时你也一天天更加认同于它，今天更是如此。</p>
+<p><strong>四、我记得清晰，我也正在回复清晰。</strong></p>
+<p>你的视力变得模糊之前是清晰的。关于清晰的记忆存在于你的意识之内。这不是发现清晰的过程，而是回忆起它、允许它回来，并且在这个过程发生的同时去承认它。</p>
+<p><strong>五、我注意到自己每天都看得更加清楚了。</strong></p>
+<p>借由这个肯定语，你表示你不仅知道自己的视力更加清晰，你还要去发现今天什么事物比昨天更加清楚，借此持续提醒自己这一点。你有意识地将自己的注意力集中在改善的过程。</p>
+<p><strong>六、我知道我现在就能看得清楚。</strong></p>
+<p>你肯定你知道清楚看见的能力就存在于你的内在。你肯定你有能力能看得清楚。即使有时候你没能够拥有绝对清晰的视力，你知道自己可以——你有能力——清楚看见。当你体验到清晰视力，同样的话就有了不同的意义。那时，你知道视力清晰的经验属于你。你不仅有能力清楚看见，也知道这时它存在于你的内在。在你「体验」清晰视力的时候，你也会这么说（「我现在看得清楚」）。这样的双重意义会加速清晰的体验，让你此时此刻便满心期待让这句话成真的证据。</p>
+<p><strong>七、我知道我的经验会引导我获得清晰视力。</strong></p>
+<p>你知道自己未来某个时刻会持续体验清晰视力。你也知道自己从此刻到那一刻所经历的每件事都会提供你资讯，让你抵达清晰视力。即使非清晰的体验，也会提醒你清晰是什么。你也会了解，你的生命经验与你的视力经验两者间的关系，这也会引领你抵达清晰视力与完全的清晰。</p>
+<p><strong>八、我接受新的思考与观看方式，它们对我而言是更加清晰的。</strong></p>
+<p>你承认自己一直以来的思考与观看方式对你而言并不清楚，要肯定自己愿意释放旧有的方式，转而拥抱清晰并认同于新的思考与观看方式。防御性的扭曲不再有意义，有意义的是接受清晰。</p>
+<p><strong>九、接受与爱会导向清晰。</strong></p>
+<p>在情感上要接受自己，接受什么对自己才是真实的，这是清晰的面向之一。这是改变过程必须的第一步。正视真实的自己，正视真实的他人，这开启了接受之门，而接受就是爱。释放批判、期待、误解的紧张，这样清晰就能回复。</p>
+<p><strong>十、我接受自己看见的，而我也看得更加清晰。</strong></p>
+<p>对自己视力好坏感到焦虑会让紧张恶化，这会创造并维持视力不清晰的状态，无法接受自己的视觉场域，也会有同样的结果。在情感上接受自己看见的一切，这会释放紧张、让你更加放松、进而对视力有正向的影响。除此之外，你愿意看真实的事物，并且在情感上接受真实的事物，不去否认或拒绝，这也会让你释放紧张并促进视力清晰。</p>
+<p><strong>十一、看得清楚愈来愈容易。</strong></p>
+<p>你愈了解自己，就愈能运用这样的知识。练习运用技巧与概念也会让你更加娴熟，同时你也会更加熟悉改变的过程。你肯定自己已经发现这愈来愈容易。你将看到回归清晰比你以前认为的更加容易。</p>
+<p><strong>十二、我正让自己变得更真，我看着自己的视力逐渐清晰。</strong></p>
+<p>你一直不让自己真实——你不允许自己真实。现在你可以了——事实上你要坚持让自己真——你也会发现自己的视力因此变得清晰。你只需要专心变得更真，就可以在自己的视力上看到效果。</p>
+<p><strong>十三、做自己、看得清楚愈来愈舒服。</strong></p>
+<p>以前你不觉得做自己很自在，或许你不相信这样没关系。如果你允许自己愈来愈立足在中心点，并且发现这样真的可以，那么你会觉得愈来愈自在。你也会对清晰视力感到更加自在，哪怕清晰对你仍是新的经验。</p>
+<p><strong>十四、我的心向外伸展，将视力清晰所需的资讯捕捉到我的意识中。</strong></p>
+<p>你派了一项功课给你的心，也愿意看看它的成效如何。你肯定自己信任这个过程，因此你知道无论你的心传达什么资讯给你，都是关系到你视力的改善。</p>
+<p><strong>十五、今天我能就看得清楚。</strong></p>
+<p>你有能力「现在」就看得清楚，你知道就在今天，你或许就可以体验并辨认出完全清晰的视力，并且认同这是你自然的状态。觉得事情一定得花时间，这是个自我局限的概念，和其他自我局限的概念一样无法成立。没有理由一定得花那么久的时间。领悟可以今天就到来。觉醒可以今天发生。今天你就能拥有清晰视力。</p>
+<p><strong>十六、每天，在各方面，我都愈来愈好。</strong></p>
+<p>这句话要肯定的是你的健康与清晰持续进步、你正回归自然的平衡与完整状态，以及你致力于正视自我生命的正向面。你愈来愈认识自己，解决自己的问题，朝着积极方向努力，并且看到正向的结果。除此之外，你的视力与视觉都愈来愈好了。</p>
+<h3 id="描述新实相观点的肯定语"><a class="header" href="#描述新实相观点的肯定语">描述新实相观点的肯定语</a></h3>
+<p><strong>十七、放松且归于中心时，我能看得更清楚。</strong></p>
+<p>你会注意到自己心理状态与清晰视力之间的关系。你会发现清晰视力的层面之一，或者说清晰的症状之一，就是放松且归于中心（centered）的状态。不仅是在有意识放松的时候，更是一种普遍放松的存在状态，同时你也能认同这个状态。</p>
+<p><strong>十八、活在当下的我看得更清楚。</strong></p>
+<p>你了解你逐步体验到的清晰，是如何连结到将注意力聚焦于经验的当下，而非聚焦于自己的想法、感知或对过去与未来的执着。你清楚看见的时候，你也经验到完全地活在当下。</p>
+<p><strong>十九、清晰存在于此时此刻。</strong></p>
+<p>你知道，过去与未来的感知可能会阻碍你清晰看见当下所发生的一切。你也了解，你无需等待清晰——清晰总是此刻便垂手可得，而你会提醒自己这一点。</p>
+<p><strong>二十、清晰是我自然的状态。</strong></p>
+<p>清晰不是不寻常的状态，而是你新的寻常状态。不清晰不是你。你体验清晰时，也正是体验着真正的自己。以前你不清晰的时候，你并没有做自己。现在你可以认同于清晰，而且随着你在各方面达到平衡、并且做真正的自己，你也会回归清晰。</p>
+<p><strong>二十一、对我为真的一切就是清晰。</strong></p>
+<p>如果你思索某个概念、并因而体验到清晰——即使很短暂——那么你便知道，自己的清晰视力正在向你展现你的个人实相：什么对你是真实的，什么是真正的你。在此你同时肯定的是，承认什么对你是真实的，这就是清晰；出于清晰的作为就是：由你的自然状态来行动并且做真正的自己。</p>
+<p><strong>二十二、我享受清晰视力。</strong></p>
+<p>当你经验到清晰视力，你肯定自己与它的关系是喜悦的。你肯定自己清楚看见时经验到快乐，而你会花愈来愈多时间做你喜欢的事。你以这个成就为荣：一个让你快乐的自然天赋回来了。</p>
+<p><strong>二十三、我看见每一件事情都运作得很完美。</strong></p>
+<p>你肯定自己所见到的完美。在生命中看到完美，让你知道自己的视力也是完美的。你在精神上与身体上均能见到完美，因为这个完美将能释放你意识中的紧张。你肯定自己相信一个正向的实相。当你逐步且频繁地提醒自己这一点，你将会见到愈来愈多完美。</p>
+<p><strong>二十四、我爱自己能清楚看见。</strong></p>
+<p>你肯定你的喜悦不仅是因为能看得清楚，更体认到自己能清楚看见的时候，经常也都是处在爱的存在状态中。你肯定自己感受的爱与体验到的清晰是有关连的。</p>
+<p><strong>二十五、清晰是自由及真实。</strong></p>
+<p>你肯定追求真实便是清晰，而且过去你因为逃避真实而无法自由。由于真，由于自由，你体验到清晰。你也肯定自我及他人的自由与清晰是有关连的。</p>
+<p><strong>二十六、我现在看得更清楚了。</strong></p>
+<p>你了解自己这时候的视力好坏，而且注意到各个清晰层面乃是连结到你对此时此刻的关注程度。你也肯定自己的视力改善了，同时你拥抱自己的进步。你也肯定，自己比起过去想法更加清晰、理解力更为敏锐。</p>
+<p><strong>二十七、我比以前看得更加清楚。</strong></p>
+<p>你有意识地提醒自己，哪些东西现在看得比以前更清楚，借此注意到自己的视力更加清晰。你拥抱自己的进展，也能从许多例子上看到自己的视力更加清晰。</p>
+<p><strong>二十八、今天我选择要看到爱。</strong></p>
+<p>借由这句肯定语，你选择看见向来就围绕着你的爱，尽管过去你或许未曾注意到爱的存在。如此一来，你也释放了旧有的观点，亲自看到这对你的意识与视力有何作用。你有意识地将注意力导向爱——以及爱表现的方式——无论自己处在什么情境之中。你时时都在自己四周看见爱。</p>
+<p><strong>二十九、做自己真正想做的事，这时总会有神奇的事发生。</strong></p>
+<p>你不仅肯定追求真实的正向效应，你也提醒自己这并非不寻常——这就是事物本来的模样。你愈来愈信任，它，支持这个过程在内在发生。你了解你可以信任自己，更了解这么做每个人都会喜欢且受益。用一次次的成功来提醒自己这一点。</p>
+<p><strong>三十、我信任对真实的追求，而且我看得清清楚楚。</strong></p>
+<p>这里你不仅肯定对自己的信任以及追求真实所带来的正向效果，同时你也肯定做真正的自己对你的视力清晰有正向的效果。你愿意看到什么对自己是真实的，你也会注意到如此所带来的清晰。清楚看见的时候，你会注意到自己对追求真实完全信任。</p>
+<h3 id="其他肯定语"><a class="header" href="#其他肯定语">其他肯定语</a></h3>
+<p>（将你自己对于以下这些肯定语的想法和理解写下来）</p>
+<p>我看见清晰正在来到。</p>
+<p>——————————————————————</p>
+<p>我今天就可以发现自己的视力清晰。</p>
+<p>——————————————————————</p>
+<p>当我清理自己的生命，我的视力就变得清晰。</p>
+<p>——————————————————————</p>
+<p>我的视力现在正变得清晰。</p>
+<p>——————————————————————</p>
+<p>我是自由的！</p>
+<p>——————————————————————</p>
+<p>在我适应自己新的意识状态时，我的视力持续清晰。</p>
+<p>——————————————————————</p>
+<p>我可以看到事情是怎么运作成功的。</p>
+<p>——————————————————————</p>
+<p>清理自己的视力比我想的还要简单。</p>
+<p>——————————————————————</p>
+<p>我知道我不戴眼镜就能看得清楚。</p>
+<p>——————————————————————</p>
+<h3 id="肯定语增强词"><a class="header" href="#肯定语增强词">肯定语增强词</a></h3>
+<p>以下介绍肯定语增强词（Affirmation Intensifiers），这是一类特殊的肯定语，能强化前述所有肯定语的功效：</p>
+<p><strong>我同意那个陈述</strong></p>
+<p>或</p>
+<p><strong>我同意那些陈述</strong></p>
+<p>除了每天使用一句肯定语外，一天当中要经常想到它，要提醒自己这句话是真实的，同时每天一开始要将整份肯定语清单读过一遍，每天结束睡觉之前还要再读一遍。本书第四部后面附有一份浓缩版、没有扩充解释的肯定语清单，提供读者迅速且方便查询。</p>
+<p>每天一开始，起床的时候，让你的第一个念头就是肯定语——任何一句都行。你可以肯定自己今天就会注意到视力更加清晰，或者肯定自己今天就可以看得清楚。如此一来，你一整天就会有正面的进展。</p>
+<p>另外一个肯定语增强词，可以在每个肯定语的前面或后面使用：<strong>肯定语永远有效。</strong></p>
+<h3 id="肯定语"><a class="header" href="#肯定语">肯定语</a></h3>
+<p>我愈来愈容易看得清楚。</p>
+<p>我同意那个陈述。</p>
+<p>肯定语永远有效。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_05.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="chapter_07.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_05.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="chapter_07.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第 5 章 正向思考 - 没有改善不了的视力</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="cover.html">封面</a></li><li class="chapter-item expanded affix "><a href="prefix_1.html">自序</a></li><li class="chapter-item expanded affix "><a href="prefix_2.html">引言</a></li><li class="chapter-item expanded affix "><a href="prefix_3.html">如何使用本书</a></li><li class="chapter-item expanded affix "><a href="part_1.html">第一部 存在与观看</a></li><li class="chapter-item expanded affix "><a href="chapter_01.html">第 1 章 视觉之喻</a></li><li class="chapter-item expanded affix "><a href="chapter_02.html">第 2 章 回归清晰</a></li><li class="chapter-item expanded affix "><a href="chapter_03.html">第 3 章 改变的过程</a></li><li class="chapter-item expanded affix "><a href="part_2.html">第二部 用你的心当作工具</a></li><li class="chapter-item expanded affix "><a href="chapter_04.html">第 4 章 创造新的实相</a></li><li class="chapter-item expanded affix "><a href="chapter_05.html" class="active">第 5 章 正向思考</a></li><li class="chapter-item expanded affix "><a href="chapter_06.html">第 6 章 肯定语</a></li><li class="chapter-item expanded affix "><a href="chapter_07.html">第 7 章 观想</a></li><li class="chapter-item expanded affix "><a href="chapter_08.html">第 8 章 心智程式编写</a></li><li class="chapter-item expanded affix "><a href="chapter_09.html">第 9 章 对自己说话</a></li><li class="chapter-item expanded affix "><a href="part_3.html">第三部 另一种观看方式</a></li><li class="chapter-item expanded affix "><a href="chapter_10.html">第 10 章 拥抱自己的力量</a></li><li class="chapter-item expanded affix "><a href="chapter_11.html">第 11 章 你和你自己的关系</a></li><li class="chapter-item expanded affix "><a href="chapter_12.html">第 12 章 活在当下</a></li><li class="chapter-item expanded affix "><a href="chapter_13.html">第 13 章 泡泡实相</a></li><li class="chapter-item expanded affix "><a href="chapter_14.html">第 14 章 人类导航系统</a></li><li class="chapter-item expanded affix "><a href="chapter_15.html">第 15 章 问与答</a></li><li class="chapter-item expanded affix "><a href="chapter_16.html">第 16 章 结语</a></li><li class="chapter-item expanded affix "><a href="part_4.html">第四部 练习</a></li><li class="chapter-item expanded affix "><a href="practice_1.html">练习 1 爱你的眼睛</a></li><li class="chapter-item expanded affix "><a href="practice_2.html">练习 2 无为</a></li><li class="chapter-item expanded affix "><a href="practice_3.html">练习 3 逐步放松</a></li><li class="chapter-item expanded affix "><a href="practice_4.html">练习 4 哈达瑜伽眼部锻炼</a></li><li class="chapter-item expanded affix "><a href="practice_5.html">练习 5 视力平衡</a></li><li class="chapter-item expanded affix "><a href="practice_6.html">改善视力肯定语</a></li><li class="chapter-item expanded affix "><a href="practice_7.html">推荐两个月计划</a></li><li class="chapter-item expanded affix "><a href="practice_8.html">如何使用视力检查表</a></li><li class="chapter-item expanded affix "><a href="part_5.html">第五部 成功案例分享</a></li><li class="chapter-item expanded affix "><a href="postfix_1.html">随书附赠：改善视力的放松冥想 MP3</a></li><li class="chapter-item expanded affix "><a href="postfix_2.html">书籍信息</a></li><li class="chapter-item expanded affix "><a href="postfix_3.html">封底</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">没有改善不了的视力</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="第-5-章-正向思考"><a class="header" href="#第-5-章-正向思考">第 5 章 正向思考</a></h1>
+<p>在改变的过程中，你一定得保持正向态度。正向的想法是成功导向的。寻找任何不是成功导向的想法，改变这想法，让它能支持你正在享受的成功。将「不能」这个字从你的字典中除去。当你使用这个字，在某个层次上，你的意思是有些事情是你不能做的。我们每个人都是不受限的存在体，能够做任何我们决定真正想做的事，但「不能」这个字却否认了这样的事实。</p>
+<p>如果你能想像得到，你就能做到！</p>
+<p>如果你发现自己用了「不能」这个字，那么请改变你的说法，让自己以不同方式表达自己的实相。你的想法会变得更加精确，更加正向。</p>
+<h3 id="范例"><a class="header" href="#范例">范例</a></h3>
+<p>「我不能忍受那个」变成「我对那个感到抗拒」</p>
+<p>「我不能做」变成「我还没学会该怎么做」</p>
+<p>「我不能了解」变成「我看不出来」 或是「我还不能清楚看出来」</p>
+<p>「我不能处理那个」变成「那对我而言一直都很困难，直到现在」</p>
+<p>「我不能记得住」变成「现在我想不起来，不过等一下就会记起来的」</p>
+<p>「我不能理解」变成「我不了解」</p>
+<p>针对非成功导向话语也要如此调整：</p>
+<p>「这没有用」变成「这还没发挥作用」</p>
+<p>「这没有用」变成「我还没看到结果」</p>
+<p>「我不知道该如何」变成「我还没学会该如何」</p>
+<p>「这很可怕」变成「这一定会变得更好」</p>
+<p>（注意到前面的「这」有那些正向部分）</p>
+<p>「这真是失败」变成「成功暂时延迟了，不过，不管如何，我学到了东西」</p>
+<p>建立成功模式。从小处开始——如果必须这样——然后获得成功。恭喜、鼓励自己的成功。只对成功提供奖励。</p>
+<p>乐趣也是正向的。取悦自己，给自己乐趣。走在街上阳光灿烂的一边。享受花朵的香味和美丽。享受你看到的一切。享受色彩与型态，即使你还不能看清楚细节。等你培养愈来愈正向的习惯，你将会看到愈来愈多的益处与优势，程序也会加速。</p>
+<p>如果你心中的自我形象不完全是正向的，那么你其实没看到自己，你看到的只是你所认为的自己。你只是感受到过去你心目中的自己。在重整自我意识时，放下过去任何限制着你、或是你未来不希望带到未来的性格或习惯。你可以承认这些性格曾经属于你，但你决定你不再需要拥有它们了。你不再需要做这些事了。你可以看到一种新的存在方式更加适合你。</p>
+<p>要注意自己的未来图像是不是正向的，而且永远要记得为正向改变开启大门。</p>
+<p>举例来说，说出「每次我看到那个人都会头痛」这样的话，其实就是说以前每次你看到那个人你都会头痛，而且下次你预期也会是这样。你并未开启大门迎接正向改变。如果你遇到那个人时并未感觉头痛，你也会有这样的期待，会去寻找头痛，然后头痛当然就会来临。更有道理的说法是这样的：「以前每次我看到那个人，我都会头痛，不过下次或许不一样。说不定那个人会改变，知道自己有错。这甚至可能会是正向的经验。我愿意获得愉快的惊喜。」这样，你就会期待正向的经验。以正向的角度看对方，会让「他们」更容易用不同方式回应。你的感知创造你的实相。</p>
+<p>对自己的性格也是这么做。不要断定自己就是不能阅读报纸的细小字体，要说你以前看不到，但是现在可以看看。或许现在你「将能」读报纸，穿针线，或看清楚电视萤幕，或者不戴眼镜或隐形眼镜来写信。</p>
+<p>事实上，或许你可以不戴眼镜或隐形眼镜继续读这本书，并且注意到自己读得愈来愈轻松。对吧？</p>
+<p>有人说心就像喝醉的猴子，如果没事做就会调皮捣蛋。如果心有事做，有功课要忙，它就会认真投入。所以要让心有事做，让它去想自己的视力正在改善，让心设法时时这么提点你。它会找到许多方法。对自己说：「我看得愈来愈清楚，我注意到以前看不到的事物现在看得清楚了。 」你的心就有了功课，「必须」去证明你是对的。事实上，如此一来你将会注意到这些陈述确实无误。</p>
+<p>有时你会花时间对自己说一些没有建设性的话，在正向观念（成功导向）与负向观念（失败导向）之间来回摆荡，心中想着不特别重要或有创意的事。时间可以不这么用。你可以提醒自己在那些方面你愈来愈好，你可以注意那些事情是过去看不到但现在却看得清清楚楚的，你可以对改善过程保持正向积极的态度。批判性思考可以用创造性思考取代。</p>
+<p>告诉自己你多么感激自己的视力与双眼。它们不是「坏掉的眼睛」，而是神奇的眼睛。尽管它们曾经变得虚弱，但如今却愈加坚强。</p>
+<p>爱你的眼睛。</p>
+<p>爱能疗愈。</p>
+<p>注意自己从大老远就能看清楚远方建筑上的个别磁砖、或是树上的树叶，注意这样的视力仍然在进步。不要整天想着以前自己的视力多么不好，而是要将心的焦距向前调整，专注在改善的过程，专注在自己愈来愈容易察觉到进步。</p>
+<p>享受你的视觉。如果视力模糊，就去享受色彩。如果视力清晰，就去享受细节。假如你曾经完全失明，然后突然你拥有现在的视力，你看到的一切会带来什么感受？你会深爱并感激自己能看见。</p>
+<p>注意自己对他人的想法，问问自己这些是正向或批判性的想法。 「一定」可以注意到正向的事物——所以仔细寻找。等到你愈来愈熟悉这个新的习惯，你会有更加放松的存在状态，也愈来愈容易在生命中体会到更多的爱。</p>
+<p>你可以想一个人，这个人爱你，想看你健康又快乐。注意自己想到这个人时出现的美好感觉。在你感觉这美好感觉、这样的爱的时候，提醒自己爱能疗愈。要知道，只要你有这个感觉，疗愈能量便能在各个层次让你重新平衡。在一天中，你能如此想到愈来愈多人，并且知道这些人让你感觉的爱，会对你的视力发挥正向的疗愈作用。除此之外，仅仅只是在一整天内感受那样的爱，就会感觉很美好。</p>
+<p>让你人格中的正向改变得以发生，清楚辨认并支持它们。你过去所认同的人格特质属于过去的你——正在浮现的新的你才是真正的你。让过去留在过去。只去认同你愈来愈注意到的正向特质。随着真正的你逐渐清晰，你的生活品质也将愈来愈快乐。</p>
+<p>如果你只和支持你、希望看到你成功的人讨论你的视力计划，你会轻松许多。其他不完全了解这个程序的人可能会阻碍你，用他们以为的善意。耐心等待，直到你获得清楚、可测量的进步成果，然后再和那些人讨论。成功将让他们无法辩驳。</p>
+<p>在心中经常告诉自己：你的视力正在持续改善，而且此刻正在发生。在改善过程中，每天至少阅读本书一个章节，注意书中的文字愈来愈有道理，观念也逐渐清晰。</p>
+<p>你正进行一趟重大且雄伟的内在之旅，要穿越你意识的领域。你逐步发现自己视力的多重本质，发现身体与心灵之间的关系。你正探索自我存在的本质，要发现真正的你，发现心与想象的力量，发现它们能做什么。</p>
+<p>你的发现引领你如此体会：没有什么你办不到的，只是有些事你还没学会该怎么做。</p>
+<p>现在你正学习如何改善视力与视觉，并且愈加注意到成效。你发现愈来愈多东西你其实是看得见的，那样的清晰正是你自然的存在状态。</p>
+<h3 id="肯定语"><a class="header" href="#肯定语">肯定语</a></h3>
+<p>每天，在各个层面，我都愈来愈好。</p>
+<p>我看见的不是问题，是解决方法。我看见事情可以怎么运作。</p>
+<p>让视力清晰比我想的更加容易！</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_04.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="chapter_06.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_04.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="chapter_06.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

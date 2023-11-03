@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第 13 章 泡泡实相 - 没有改善不了的视力</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="cover.html">封面</a></li><li class="chapter-item expanded affix "><a href="prefix_1.html">自序</a></li><li class="chapter-item expanded affix "><a href="prefix_2.html">引言</a></li><li class="chapter-item expanded affix "><a href="prefix_3.html">如何使用本书</a></li><li class="chapter-item expanded affix "><a href="part_1.html">第一部 存在与观看</a></li><li class="chapter-item expanded affix "><a href="chapter_01.html">第 1 章 视觉之喻</a></li><li class="chapter-item expanded affix "><a href="chapter_02.html">第 2 章 回归清晰</a></li><li class="chapter-item expanded affix "><a href="chapter_03.html">第 3 章 改变的过程</a></li><li class="chapter-item expanded affix "><a href="part_2.html">第二部 用你的心当作工具</a></li><li class="chapter-item expanded affix "><a href="chapter_04.html">第 4 章 创造新的实相</a></li><li class="chapter-item expanded affix "><a href="chapter_05.html">第 5 章 正向思考</a></li><li class="chapter-item expanded affix "><a href="chapter_06.html">第 6 章 肯定语</a></li><li class="chapter-item expanded affix "><a href="chapter_07.html">第 7 章 观想</a></li><li class="chapter-item expanded affix "><a href="chapter_08.html">第 8 章 心智程式编写</a></li><li class="chapter-item expanded affix "><a href="chapter_09.html">第 9 章 对自己说话</a></li><li class="chapter-item expanded affix "><a href="part_3.html">第三部 另一种观看方式</a></li><li class="chapter-item expanded affix "><a href="chapter_10.html">第 10 章 拥抱自己的力量</a></li><li class="chapter-item expanded affix "><a href="chapter_11.html">第 11 章 你和你自己的关系</a></li><li class="chapter-item expanded affix "><a href="chapter_12.html">第 12 章 活在当下</a></li><li class="chapter-item expanded affix "><a href="chapter_13.html" class="active">第 13 章 泡泡实相</a></li><li class="chapter-item expanded affix "><a href="chapter_14.html">第 14 章 人类导航系统</a></li><li class="chapter-item expanded affix "><a href="chapter_15.html">第 15 章 问与答</a></li><li class="chapter-item expanded affix "><a href="chapter_16.html">第 16 章 结语</a></li><li class="chapter-item expanded affix "><a href="part_4.html">第四部 练习</a></li><li class="chapter-item expanded affix "><a href="practice_1.html">练习 1 爱你的眼睛</a></li><li class="chapter-item expanded affix "><a href="practice_2.html">练习 2 无为</a></li><li class="chapter-item expanded affix "><a href="practice_3.html">练习 3 逐步放松</a></li><li class="chapter-item expanded affix "><a href="practice_4.html">练习 4 哈达瑜伽眼部锻炼</a></li><li class="chapter-item expanded affix "><a href="practice_5.html">练习 5 视力平衡</a></li><li class="chapter-item expanded affix "><a href="practice_6.html">改善视力肯定语</a></li><li class="chapter-item expanded affix "><a href="practice_7.html">推荐两个月计划</a></li><li class="chapter-item expanded affix "><a href="practice_8.html">如何使用视力检查表</a></li><li class="chapter-item expanded affix "><a href="part_5.html">第五部 成功案例分享</a></li><li class="chapter-item expanded affix "><a href="postfix_1.html">随书附赠：改善视力的放松冥想 MP3</a></li><li class="chapter-item expanded affix "><a href="postfix_2.html">书籍信息</a></li><li class="chapter-item expanded affix "><a href="postfix_3.html">封底</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">没有改善不了的视力</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="第-13-章-泡泡实相"><a class="header" href="#第-13-章-泡泡实相">第 13 章 泡泡实相</a></h1>
+<p>有个故事是这样的：有位禅师在路上走，遇见一个路人从对面走来。旅人向禅师打招呼，询问他即将抵达而禅师正要离开的那个城镇人情风土如何。禅师询问旅人，他刚刚离开的那个城镇又是如何。旅人回答，当地人易怒又恶毒，也不太诚实。禅师告诉旅人，他可能会发现自己即将抵达的城镇也有相同的人事物。</p>
+<p>又走了一段路之后，禅师又遇见一个路人从对面走来，那人跟前一个旅人问了同样的问题。禅师也问这个旅人，他刚刚离开的城镇怎么样，旅人回答，当地人都开朗友善，总是愿意助人且行为正直。禅师于是告诉这个旅人，他即将抵达的城镇也是一样。</p>
+<p>两个旅人朝着同一个城镇前进，不过两人身上围绕的能量场大不相同——两人有不同的感知滤镜。每个人都会吸引特定性质的经验；他们的经验是由自己特定的能量场所决定。</p>
+<p>我们每个人都被一个泡泡围绕，这是我们感知的滤镜。我们所有的感知都必须通过这个泡泡，由它过滤、并挑选出当时我们决定与自己相关的资讯。泡泡是必须的，因为我四周有这么多的资讯想要进来：大家穿着什么、每个人的脸、我们环境样的诸般细节、树上有多少片树叶、气温、天空上云朵的大小、我们听到的所有声音等等。如果不进行挑选，我们会经验混乱，像是看着各个频道同时播映的电视机。</p>
+<p>这就像电脑储存的许多资讯。在一段时间内，不是所有资讯都是必要或有用的，但只要它们仍储存于电脑内，需要时我们便能存取。所以，不是所有进入的资讯都需要记录在我们的意识觉知中。它会不受注意地穿过泡泡，但是需要时我们可以存取，透过有意识地回忆、或者像催眠与回溯（regression）等技术。</p>
+<p>例如，如果我们想象每个泡泡都有特定颜色，那么我们可以说有人从红色泡泡看着这世界，有人从蓝色泡泡等等。</p>
+<p>当然啦，从红色泡泡看，世界是红色的，从蓝色泡泡看，世界是蓝色的。实际上，世界可能不是红色也不是蓝色，或许是黑白的。想象某人在蓝色泡泡、而某人在红色泡泡，他们讨论着世界的颜色。每个人都确定自己是对的——事实上，他们从自己的观点来说、从自己的泡泡来看，确实是对的。每个人都能准确地诉说自己的感知。我们可以说两个人都是对的。当然，从绝对实相来说，他们都是由自己的滤镜来看世界，因此也可以说两个人都是错的。不过，我们可以说两个人都精确地回报自己的经验，那么我们便能稍稍了解，他们是用什么滤镜来观看。</p>
+<p>我们也可以说，每个泡泡都是个人意识的产物，每个泡泡里面都是镜子，这样人们不一定会看到世界真正的样子，而是根据自己的样子看到世界。个人若是自我感知的产物，他们便会将自己的意图与价值观投射到他们眼中的世界。</p>
+<p>评断他人时，人们其实在说：如果他们是那个人，他们就做了某件错误的事。他们会用自己的标准来衡量其他人，说不定也会用其他人的标准来衡量自己。等到对方的意图、价值观和理由为人所知后，这样的观点可能会相当不同。</p>
+<p>举例来说，如果他人用自己的标准来衡量你，因而说你对某件事的想法是错的，他们其实是将自己的意图投射到你身上。如果你能与他们沟通自己的意图，通常他们的批判就会消失。他们得知了从你的泡泡出发的观点。</p>
+<p>在任何互动中，获得双方观点都相当有用——包括由内向外的观点以及由外向内的观点。近视的人较能察觉由内向外的观点，不太能获得由外向内的观点。相对的，远视的人较习惯由外向内的观点，对由内向外的观点较为陌生。两种观点都很重要，拥有两种观点也能提供较为全面的蓝图，以进行较为理智的决策。</p>
+<p>或许你认识某些人，对于他们，你的评语是：「如果他们肯听自己给别人的建议就好了。」也就是说，我们看出来他们将自我的反映投射到身边的人。或许，你也曾注意到自己给了不少人同样的建议。那么，这么好的建议是不是也适合你自己去采纳呢？</p>
+<p>我们可以说，我们吸引到自己身边的人，会由我们的内在引发出我们需要听到的、关于我们自己的资讯。也可以说，世界上充满四处走动、对自己说话的人——但只有少数人真的在倾听。理解这点以后，你会继续对自己说话，不过现在你也会倾听。你可以扪心自问：这个出自于你的资讯是否对你也同样有用——然后奉行自己的建议。你也可以看到其他给你建议的人其实也是在对自己说话，并且给了自己绝佳的建议。不过，只有他们自己才知道他们是否也在倾听自己。</p>
+<p>如果提供建议的你热诚远胜倾听建议的对方，你就知道你的建议是针对自己。这些话语想要出现，好让你听见。从另一角度来说也是如此：如果某人热衷于给你建议，但身为听众的你却兴趣缺缺，那么这样的建议应该是针对某人自己。如果双方对沟通都抱持高度热诚，那么一切都水到渠成。若是不然，你只需觉察自己的感知，而如果你要提供建议，请觉察该建议什么。你要在内心感谢对方在你通往清晰的道路上对你施恩。那时，你也许会发觉你对对方的观点改变了，因为你对过去的观点已经达成目的并因此消失，所以此刻你能看到当下的对方。</p>
+<p>觉察自己的泡泡让你能认识自己，认识自己在生命中所经验的一切。如果你注意到你正在将自己的想法和感觉投射到其他人，你便能决定采取新的观点。那时你就能「穿越魔镜」，并看清他人的实相。</p>
+<p>在多数人经验的感知层次中，镜像反射不是有意识的过程，因此人们深受自我感知的影响。不过，有一个感知层次，在此这些过程会变成有意识的直接经验，这就是心的层次，透过无条件的爱与接受这样的泡泡来观看。当你能直接视人如己，慈悲、理解、智慧都会出现，你也会发现自己仿佛将他人当成自己一般对他们说话，用你希望他人对你说话的方式对他们说话。</p>
+<p>当你发现自己在批判他人，你可以保持觉知，运用觉知来提升自己的感知层次来到接受的层次。这样的效果就是：你会将压力由自己的意识中释放。</p>
+<p>当你想到某人、并且感觉你对对方产生抗拒感，请想想你所抗拒的那人有何特质。问问自己，那些话语是否可以也用来描述你，问问自己，是否那些话语曾经用来描述你，或许，会这么说你的人，并不了解你的言行举止背后的动机。</p>
+<p>你若知道，这个人的动机可能和你完全相同，这么一来你就会对他们感到体谅与慈悲。在你眼中，他们就是你。这是新的观点，你可以用这当成沟通的基础。虽然之前你们之间有一道墙，但是现在墙上开启了一扇门，沟通的管道出现了。你可以提供他们你自己希望获得的建议。你可以用你希望他人跟你说话的方式来跟他们说话。</p>
+<p>你也可以不带抗拒地辨认一个人的特质。抗拒感会让你知道自己的某个部分。如果你不带抗拒地看到对方的特质，而且不去评断对方该以不同方式做些什么，那么你也可决定自己需要做什么。例如，如果某人是小偷，你会看出这一点，做该做的事，好让自己的东西别被偷。不过，你不需要因为那人是小偷而生气。事实上，他们可能是可爱的小偷，或许双方保持距离你会更容易爱他们。</p>
+<p>当你持续将抗拒由你的感知中去除，你也将改变你的泡泡的性质。你会愈来愈了解你的意识有办法回答你所有的问题，并且给与你所需的所有指引。</p>
+<p>你会愈来愈了解你可以成为自己的权威、自己的指引、自己的上师、自己的导师。你会愈来愈信任自己的感知，愈来愈能拥抱自己的清晰。</p>
+<p>在转变的过程中，你会改变自己泡泡的本质。这可以是需要一段时间的渐进过程，也可以是刹那间就完成的改变。如果过程是渐进的，在某一点你会领悟，自己的视力比以前更清晰，而这个渐进过程会持续下去，直到成为稳定的清晰。</p>
+<p>如果改变的程序在某一个时刻发生，这可以是两种方式。你可能会经验到过去的泡泡突然「破掉」，有时候会感觉能量灌注，并且让新的泡泡出现。这样的经验有点像从梦中苏醒，突然间，在清醒的实相中看见何者为真。</p>
+<p>改变时刻会被经验的第二种方式就是，像从一个泡泡进入另一个，仿佛两个泡泡——就像肥皂泡泡一样——彼此接触，因此共享一个薄膜。那时，意识的点（也就是你）由一个泡泡的中心穿越薄膜，并进入第二个泡泡。每个泡泡都是一个模型——是所有被感知的事物的组合，是一种实相，是事物形成意义的方式。</p>
+<p>对意识点来说，这种运动的最初经验可能是，事情不再像过去那样有道理了。当然，事物要以新的方式有意义，那么它们就不能再以旧的方式那样有道理。在这个瓣膜所代表的短暂时间中，你可能会感觉到自己的感知呈现混乱与无意义的状态。这时你绝不可以回头用旧有的方式来赋予事物意义，而要包容这无意义，让意识点穿越两个泡泡间的瓣膜。如果你有这种经验，那么你就知道，这只是中场、只是过渡，其存在暗示你将重生于新的典范、新的泡泡、新的实相。</p>
+<p>那时新的意义将会浮现。随着意识点持续移入新的泡泡，意义会从混乱中浮现。最好持续将注意力放在当下，眼光朝向未来，观看这个浮现、重生的过程。随着新典范的出现，这会成为发现与愉悦的过程，你会看到事物真的不一样了，这是你认为更好的不一样。</p>
+<p>还有其他事会发生。你会发现自己的泡泡不只是感知的滤镜，也是一种选择性的磁铁，会让你吸引某类经验以及某类人格特质。</p>
+<p>当你的泡泡开始改变，磁铁的选择也开始改变。你会注意自己开始吸引不同的经验、吸引不同个性的人。这是你感知转变的直接结果。记得这点：你的感知创造你的实相。你的感知改变了，你的基本信念也会改变；你的基本信念改变了，你的感知也会随之改变。</p>
+<p>外在世界的事件也会随着这些改变而改变。这就像你走入完全不同的电影，扮演完全不同的角色。不仅是从泡泡里面向外观看的景象不同了，由泡泡外面向里面看的样子也不同了，事实上，泡泡所处的环境也不再相同。如果以前泡泡是在一杯啤酒里面，现在它就在一杯香槟里，或者说，以前的调味汽水变成气泡矿泉水。</p>
+<p>对身为读者的你来说，这类描述刚开始或许有点抽象，但是当你开始进入这个过程，你会辨认出它正在发生。当你稍后重读这一章，这些话语会和你的经验有更紧密的连结，你也会知道正在发生的就是你所等待、所想要的。那时你可以带着稳定感与清晰，来看着自己重生的过程。</p>
+<h3 id="肯定语"><a class="header" href="#肯定语">肯定语</a></h3>
+<p>我知道什么是清晰，而且我每天都感到更加清晰。</p>
+<p>清晰是我自然的状态。</p>
+<p>我的视力正在清晰。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_12.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="chapter_14.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_12.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="chapter_14.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
