@@ -44,7 +44,7 @@ E-MAIL | [tgblife@ms27.hinet.net](mailto:tgblife@ms27.hinet.net)
 
 定价 | 320元
 
-ISBN : 978-986-5739-35-5（平装附光碟片）
+ISBN: 978-986-5739-35-5（平装附光碟片）
 
 Improve Your Vision:Your Inner Guide to Clearer Vision
 
@@ -70,7 +70,7 @@ All Rights Reserved.
 
 面；公分.--（健康种子系列：50）
 
-译自：Improve your vision : your inner guide to clearer vision
+译自：Improve your vision: your inner guide to clearer vision
 
 ISBN 978-986-5739-35-5（平装附光碟片）
 
