@@ -14,7 +14,7 @@
 mdbook build
 ```
 
-pdf 文件是用 [Convertio](https://convertio.co) 转换 epub 获得的。
+pdf 文件是用 [Convertio](https://convertio.co) 转换 epub 文件获得的。
 
 #### 已知问题
 
