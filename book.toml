@@ -9,3 +9,5 @@ title = "没有改善不了的视力"
 
 [output.epub]
 cover-image = "000.jpg"
+additional-css = ["src/epub.css"]
+use-default-css = false
