@@ -19,6 +19,5 @@ pdf 文件是用 [Convertio](https://convertio.co) 转换 epub 文件获得的�
 #### 已知问题
 
 1. epub 文件在微信读书（手机端）等软件中表格不显示。
-2. pdf 文件有两个封面页。
 3. pdf 文件中加粗的字体过粗。
 4. 在线版无法搜索中文（mdbook 不支持）。
