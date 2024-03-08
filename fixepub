@@ -1,0 +1,20 @@
+#!/bin/zsh
+
+cd book/epub
+
+7z x 没有改善不了的视力.epub -o没有改善不了的视力 -y
+mv 没有改善不了的视力.epub 没有改善不了的视力.bak.epub
+
+cd 没有改善不了的视力
+
+sed -i 's|idref="cover.html"|idref="cover.html" properties="duokan-page-fullscreen"|g' **/content.opf
+
+sed -i 's|<p><img|<p style="text-align: center;"><img|g' **/*.html
+
+a ${PWD:t}.epub .
+
+sed -i 's|.*cover\.html.*||g' **/content.opf
+
+sed -i '12,17d' **/toc.ncx
+
+a ${PWD:t}_to_pdf.epub .
