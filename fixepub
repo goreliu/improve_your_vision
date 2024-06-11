@@ -9,9 +9,12 @@ cd 没有改善不了的视力
 
 sed -i 's|idref="cover.html"|idref="cover.html" properties="duokan-page-fullscreen"|g' **/content.opf
 
-sed -i 's|<p><img|<p style="text-align: center;"><img|g' **/*.html
-
-sed -i 's|<p>|<p style="text-indent: 2em;">|g' **/*.html
+sed -i 's|<p><img|<p style="text-align: center;"><img|g; 
+    s|<p>|<p style="text-indent: 2em;">|g;
+    s|<h1>|<h1 style="font-size: 1.5em;">|g;
+    s|<h2>|<h2 style="font-size: 1.3em;">|g;
+    s|<h3>|<h3 style="font-size: 1.1em;">|g;
+    ' **/*.html
 
 a ${PWD:t}.epub .
 
