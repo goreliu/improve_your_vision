@@ -3,104 +3,6 @@
 /* NOT SUITABLE for Kindle */
 /* visit us @ http://bbebooksthailand.com/developers.html */
 
-/* This adds margins around every page to stop ADE's line numbers from being superimposed over content  */
-@page {
-    margin: 10px;
-}
-
-/*===Reset code to prevent cross-reader strangeness===*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-tt,
-var,
-b,
-u,
-i,
-center,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
-ol,
-ul,
-li,
-dl,
-dt,
-dd {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
 a {
     font-size: 1.0em;
 }
@@ -124,9 +26,7 @@ a:active {
 /*===Body Presentation and Margins===*/
 /* Text alignment is still a matter of debate. Feel free to change to text-align: left; */
 body {
-    margin: 1em;
     text-align: justify;
-    line-height: 120%;
 }
 
 
@@ -136,29 +36,24 @@ body {
 h1 {
     text-indent: 0;
     text-align: center;
-    margin: 8px 0 0 0;
     font-size: 1.5em;
     font-weight: bold;
     page-break-before: always;
-    line-height: 150%;
     /*gets squished otherwise on ADE */
 }
 
 h2 {
     text-indent: 0;
     text-align: center;
-    margin: 10px 0 0 0;
     font-size: 1.2em;
     font-weight: bold;
     page-break-before: always;
-    line-height: 135%;
     /*get squished otherwise on ADE */
 }
 
 h3 {
     text-indent: 0;
-    text-align: left;
-    margin: 8px 0 6px 0;
+    text-align: center;
     font-size: 1.1em;
     font-weight: bold;
 }
@@ -168,7 +63,6 @@ h4 {
     text-align: left;
     font-size: 1.1em;
     font-weight: bold;
-    margin: 8px 0 6px 0;
 }
 
 h5 {
@@ -176,7 +70,6 @@ h5 {
     text-align: left;
     font-size: 1em;
     font-weight: bold;
-    margin: 8px 0 6px 0;
 }
 
 h6 {
@@ -184,46 +77,11 @@ h6 {
     text-align: left;
     font-size: 1.0em;
     font-weight: bold;
-    margin: 8px 0 6px 0;
 }
-
-
-/* Hyphen and pagination Fixer */
-/* Note: Do not try on the Kindle, it does not recognize the hyphens property */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    -webkit-hyphens: none !important;
-    hyphens: none;
-    page-break-after: avoid;
-    page-break-inside: avoid;
-}
-
-
-/*===Paragraph Elements===*/
-/* Margins are usually added on the top, left, and right, but not on the bottom to prevent certain eReaders not collapsing white space properly */
-/*first-line indent paragraph for fiction*/
-
-/*
- * 去掉首行缩进
-p {
-    font-size: 1.0em;
-    text-indent: 1.25em;
-    margin: 0.2em;
-    widows: 2;
-    orphans: 2;
-}
-*/
-
 
 /* block type paragraph for non-fiction */
 p code {
     text-indent: 0;
-    margin: 1.0em 0 0 0;
     overflow-x: auto;
     background: #f1f1f1;
     color: #484848;
@@ -258,13 +116,11 @@ pre code.language-rust {
 span.caption {
     font-size: 1.0em;
     font-weight: 600;
-    line-height: 1.45em;
 }
 
 /* for centered text and wrappers on images */
 p.centered {
     text-indent: 0;
-    margin: 1.0em 0 0 0;
     text-align: center;
 }
 
@@ -272,14 +128,12 @@ p.centered {
 /* section Breaks (can use centered-style for non-fiction) */
 p.centeredbreak {
     text-indent: 0;
-    margin: 1.0em 0 1.0em 0;
     text-align: center;
 }
 
 
 /* First sentence in chapters following heading */
 p.texttop {
-    margin: 1.5em 0 0 0;
     text-indent: 0;
 }
 
@@ -292,26 +146,22 @@ p.clearit {
 
 /* 1st level TOC */
 p.toctext {
-    margin: 0 0 0 1.5em;
     text-indent: 0;
 }
 
 
 /* 2nd level TOC */
 p.toctext2 {
-    margin: 0 0 0 2.5em;
     text-indent: 0;
 }
 
 
 /*==LISTS==*/
 ul {
-    margin: 1em 0 0 2em;
     text-align: left;
 }
 
 ol {
-    margin: 1em 0 0 2em;
     text-align: left;
 }
 ul li code {
@@ -389,7 +239,6 @@ img {
 
 /*==TABLES==*/
 table {
-    margin: 1.0em auto;
     border-collapse: collapse;
     border-spacing: 0;
 }
@@ -399,7 +248,6 @@ th,
 td {
     padding: 3px 20px;
     border: 1px hsl(0, 0%, 95%) solid;
-    margin: 0;
     vertical-align: baseline;
 }
 table thead {
@@ -426,7 +274,6 @@ table tbody tr td code {
     text-decoration: none;
 }
 
-
 /*==DROP CAPS==*/
 
 span.dropcap {
@@ -434,14 +281,11 @@ span.dropcap {
     font-weight: bold;
     height: 1em;
     float: left;
-    margin: 0.3em 0.125em -0.4em 0.1em;
 }
-
 
 /*==PULL QUOTE==*/
 
 div.pullquote {
-    margin: 2em 2em 0 2em;
     text-align: left;
 }
 
@@ -452,25 +296,20 @@ div.pullquote p {
 
 div.pullquote hr {
     width: 100%;
-    margin: 0;
     height: 3px;
     color: #2E8DE0;
     background-color: #2E8DE0;
     border: 0;
 }
 
-
 /*==BLOCK QUOTE==*/
 blockquote {
-    margin: 10px 0;
     padding: 0 20px;
     background-color: hsl(197, 37%, 96%);
 }
 div.blockquote {
-    margin: 1em 1.5em 0 1.5em;
     text-align: left;
     font-size: 0.9em;
 }
-
 
 /*==eBook Specific Formatting Below Here==*/
