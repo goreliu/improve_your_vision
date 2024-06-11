@@ -11,6 +11,8 @@ sed -i 's|idref="cover.html"|idref="cover.html" properties="duokan-page-fullscre
 
 sed -i 's|<p><img|<p style="text-align: center;"><img|g' **/*.html
 
+sed -i 's|<p>|<p style="text-indent: 2em;">|g' **/*.html
+
 a ${PWD:t}.epub .
 
 sed -i 's|.*cover\.html.*||g' **/content.opf
